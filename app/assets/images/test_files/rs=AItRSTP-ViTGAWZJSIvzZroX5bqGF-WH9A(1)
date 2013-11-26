@@ -1,0 +1,11 @@
+var _=_||{};(function(_){var window=this;
+try{
+var oi=function(){var a=(0,_.M)("q",void 0);return a&&(0,window.decodeURIComponent)(a.replace(/\+/g," "))};var pi=function(a,b,c){a.timeOfStartCall=(new Date).getTime();var d=c||_.q;d.GOOGLE_FEEDBACK_START_ARGUMENTS=arguments;var e=a.serverUri||"//www.google.com/tools/feedback",f=d.GOOGLE_FEEDBACK_START;f?f.apply(d,arguments):(d=d.document,f=d.createElement("script"),f.src=e+"/load.js",d.body.appendChild(f))};var qi=function(a){return(a=a.getAttribute("data-ved"))?"ved:"+a:""};
+var ri=function(a,b,c){var d=a.ved,e=a.bucket,f="true"===a.preserveuseridentity;d?window.google.log("gf","&ved="+(0,window.encodeURIComponent)(d)):window.google.log("gf","");d={productId:si,locale:window.google.kHL,authuser:window.google.authuser,https:window.google.https(),enableAnonymousFeedback:!f,extractMetadataFunction:qi};f={ei:window.google.kEI,expi:window.google.kEXPI,si:ti,internal:ui};e&&(d.bucket=e);c?(f.q=oi(),f.tier=1,d.enableRating=!0):f.query=oi();b&&(d.flow="help",d.anchor=window.document.getElementById("abar_button_opt"),
+d.helpCenterPath="websearch",d.helpCenterContext=a.context,d.showHelpCenterLink=!0,e&&(d.contactBucket=e));pi(d,f)};var vi=function(a,b){ri(b,!1,!1)};var wi=function(a,b){vi(0,b);return!0};var xi=function(a,b){ri(b,!1,!0)};var yi=function(a,b){ri(b,!0,!1);return!0};(0,_.Pe)("gf");
+var si=196,ti=!1,ui=!1;(0,_.Fd)("gf",{init:function(a){si=a.pid;ti=Boolean(a.si);ui=Boolean(a["int"]);(0,_.Gf)("gf",{sf:vi,sfd:wi,sh:yi,smf:xi})},dispose:function(){var a=window.GOOGLE_FEEDBACK_DESTROY_FUNCTION;a&&a()}});
+(0,_.Le)("gf");(0,_.Qe)();
+}catch(e){_._DumpException(e)}
+})(_);
+
+// Copyright 2002-2013 Google Inc.
