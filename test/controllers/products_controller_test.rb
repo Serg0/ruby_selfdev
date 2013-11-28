@@ -55,4 +55,13 @@ class ProductsControllerTest < ActionController::TestCase
 
     assert_redirected_to products_path
   end
+
+
+  test "check layout"do
+    get :index
+    assert_select '#columns #side h2', minimum: 3
+
+  end
+
+
 end

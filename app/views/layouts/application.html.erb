@@ -21,7 +21,10 @@
       <li><a href="http://www..../contact">Contact</a></li>
 
       <li><h2>Current time is: <%= Time.now %></h2></li>
+
       <li><h2>Current time is2: <%= @time %></h2></li>
+
+      <li><h2>Current time is3:  <%= Time.now.strftime('%I:%M %p') %></h2></li>
     </ul>
   </div>
   <div id="main">
