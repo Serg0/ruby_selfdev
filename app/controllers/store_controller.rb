@@ -3,5 +3,7 @@ class StoreController < ApplicationController
 
     @products = Product.order(:title)
     @time = Time.now
+
+    @index_count = index_query_count
   end
 end

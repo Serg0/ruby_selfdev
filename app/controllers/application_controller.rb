@@ -14,5 +14,16 @@ class ApplicationController < ActionController::Base
   end
 
 
+  def index_query_count
+      if session[:counter].nil?
+        session[:counter] = 1
+      else
+        session[:counter] += 1
+      end
+  end
+
+  def reset_index_counter
+    session[:counter] = 0
+  end
 
 end

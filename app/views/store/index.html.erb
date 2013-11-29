@@ -2,6 +2,9 @@
     <p id="notice"><%= notice %></p>
 <% end %>
 <h1>Your Pragmatic Catalog</h1>
+<% if @index_count >= 5 %>
+<h2>Requested index for <%=  pluralize(@index_count, "time") %></h2>
+<% end %>
 <% @products.each do |product| %>
     <div class="entry">
       <%= image_tag(product.image_url) %>
@@ -9,6 +12,7 @@
       <%= sanitize(product.description) %>
       <div class="price_line">
         <span class="price"><%= number_to_currency(product.price, locale: :ru) %></span>
+        <%= button_to 'Add to Cart', line_items_path(product_id: product) %>
       </div>
     </div>
 <% end %>
