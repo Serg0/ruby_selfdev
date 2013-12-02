@@ -32,6 +32,7 @@ class CartsController < ApplicationController
 
   # GET /carts/1/edit
   def edit
+    @cart = Cart.find(params[:id])
   end
 
   # POST /carts
@@ -53,6 +54,8 @@ class CartsController < ApplicationController
   # PATCH/PUT /carts/1
   # PATCH/PUT /carts/1.json
   def update
+    @cart = Cart.find(params[:id])
+
     respond_to do |format|
       if @cart.update(cart_params)
         format.html { redirect_to @cart, notice: 'Cart was successfully updated.' }
@@ -67,9 +70,13 @@ class CartsController < ApplicationController
   # DELETE /carts/1
   # DELETE /carts/1.json
   def destroy
+    @cart = current_cart
     @cart.destroy
+    session[:cart_id] = nil
+
     respond_to do |format|
-      format.html { redirect_to carts_url }
+      format.html { redirect_to store_url,
+                                notice: 'Your cart is currently empty' }
       format.json { head :no_content }
     end
   end
