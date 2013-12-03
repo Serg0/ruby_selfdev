@@ -31,4 +31,15 @@ ruby2:
       delivered fast, you should add Ruby to your toolbox.
    price:       60.99
    image_url:   test_image2.png
+
+
+
+ruby3:
+    title:       Programming Ruby 3.0
+    description:
+         Ruby is the fastest growing and most exciting dynamic
+         language out there.  If you need to get working programs
+         delivered fast, you should add Ruby to your toolbox.
+    price:       72.95
+    image_url:   test_image3.png
 #END:ruby
