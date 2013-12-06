@@ -5,5 +5,6 @@ class StoreController < ApplicationController
     @time = Time.now
 
     @index_count = index_query_count
+    @cart = current_cart
   end
 end
