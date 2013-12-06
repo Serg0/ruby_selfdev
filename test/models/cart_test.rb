@@ -10,7 +10,7 @@ class CartTest < ActiveSupport::TestCase
 
   test "add diff products count change" do
 
-    card = carts(:one)
+    card = carts(:two)
     products = [products(:ruby), products(:ruby2), products(:ruby3)]
 
     products.each do |product|
@@ -24,7 +24,7 @@ class CartTest < ActiveSupport::TestCase
 
   test "add duplicate products count change" do
 
-    card = carts(:one)
+    card = carts(:two)
     products = [products(:ruby), products(:ruby2), products(:ruby3)]
 
     3.times  do |index|
@@ -84,7 +84,7 @@ class CartTest < ActiveSupport::TestCase
 
   test "add diff products price change" do
 
-    card = carts(:one)
+    card = carts(:two)
     products = [products(:ruby), products(:ruby2), products(:ruby3)]
 
     products.each do |product|

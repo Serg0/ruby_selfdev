@@ -2,12 +2,12 @@
 
 one:
   product_id: 1
-  cart_id: 31
+  cart_id: 1
   quantity: 1
   price: 19.99
 
 two:
   product_id: 2
-  cart_id: 31
+  cart_id: 1
   quantity: 1
   price: 12.75
